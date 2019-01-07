@@ -1,0 +1,11 @@
+{
+  "name": "css-elements",
+  "version": "1.0.0",
+  "description": "A series of css visual elements, built using html, css, js and svg elements. They are based on the latest design trends for 2018/19.",
+  "main": "./dist/bundled.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Kew",
+  "license": "MIT"
+}

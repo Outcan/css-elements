@@ -1,0 +1,79 @@
+/* 400px */
+@define-mixin atTiny {
+  @media (min-width: 25em);
+}
+
+/* 530px */
+@define-mixin atSmall {
+  @media (min-width: 33.125em) {
+    @mixin-content;
+  }
+}
+
+/* 767px */
+@define-mixin atSmallMedium {
+  @media (min-width: 47.9375em) {
+    @mixin-content;
+  }
+}
+
+/* 960px */
+@define-mixin atMedium {
+  @media (min-width: 60em) {
+    @mixin-content;
+  }
+}
+
+/* 1140px */
+@define-mixin atLarge {
+  @media (min-width: 71.25em) {
+    @mixin-content;
+  }
+}
+
+@define-mixin clearfix {
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@define-mixin fontSmooth {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: greyscale;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--text);
+  font-family: var(--ff);
+  font-size: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1rem 0;
+}
+
+p,
+li {
+  line-height: 1.4;
+}
